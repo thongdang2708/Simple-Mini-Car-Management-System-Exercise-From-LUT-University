@@ -1,0 +1,8 @@
+AMG-111,Toyota Yaris,65,Air Conditioning,Hybrid,Automatic Transmission
+AMG-112,Lamborghini,66,Air Conditioning,Hybrid,Automatic Transmission
+AMG-113,Mercedes-Benz,67,Air Conditioning,Hybrid,Automatic Transmission
+AMG-114,BMW,68,Air Conditioning,Hybrid,Automatic Transmission
+AMG-115,KLM,69,Air Conditioning,Hybrid,Automatic Transmission
+AMG-116,Audi,70,Hybrid
+AMG-117,Hyundai,71,Automatic Transmission
+AMG-118,Honda,72,Air Conditioning
