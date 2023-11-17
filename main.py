@@ -95,6 +95,7 @@ class Customers:
     def getCustomerList(self):
         return self.customers
 
+#Class to store transaction
 class Transaction:
     def __init__(self, plate, birth_date, start_date, return_date, days, price):
         self.plate = plate
@@ -122,6 +123,7 @@ class Transaction:
     def getPrice (self):
         return self.price
 
+#Class to store list of transactions
 class Transactions:
     def __init__(self):
         self.transactions = []
@@ -327,7 +329,7 @@ def checkBirthDateFunction (list_of_customers, main):
 
     birth_date = str(input("Enter correct date of birth in the form DD/MM/YYYY: Or you want to go back to the main menu, click x to exit: ")).strip()
 
-    if (birth_date == "x"):
+    if (birth_date.lower() == "x"):
         main()
         return
 
@@ -492,7 +494,7 @@ def addEmailFunction (main):
 
     email = str(input("Please enter your email: ")).strip()
 
-    if (email == "x"):
+    if (email.lower() == "x"):
         main()
         return
 
