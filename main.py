@@ -190,7 +190,7 @@ def main():
 
     #Run logic with selected options
     try:
-        value = int(input(""))
+        value = int(input())
 
         if (value == 1):
             listOfAvailableCars(list_of_cars)
@@ -211,9 +211,12 @@ def main():
             print("You chose exit. Welcome again!")
         else:
             print("There are no options with this number")
+            main()
     except ValueError:
         print("Not a number but a string. Please provide it again as below\n")
         main()
+    except KeyboardInterrupt:
+        print("You interrupted the program.")
 
 #Function to run the program
 def program():
@@ -358,9 +361,9 @@ def saveCustomerToCustomerTxtFile(list_of_customers, birth_date_customer, main):
 
         return first_name
 
-    first_name = str(input("Please enter your first name: ")).strip()
+    first_name = str(input("Please enter your first name: ")).strip().lower()
     first_name = first_name[0].upper() + first_name[1:]
-    last_name = str(input("Please enter your last name: ")).strip()
+    last_name = str(input("Please enter your last name: ")).strip().lower()
     last_name = last_name[0].upper() + last_name[1:]
     email = addEmailFunction(main)
 
